@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: steelblue;
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            
+            background-color: white;
+            width: 50%;
+            min-height: 300px;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h3{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="content">
+        <% if (users.length > 0) { %>
+        <% users.forEach(user=>{ %>
+        
+        <h3 class="title"> <%=user.firstName %> <%=user.lastName %> </h3>
+
+        <p> <%=user.email %> </p>
+        <% })%> <%}else{ %>
+        <p>Não há usuários para exibir</p>
+        <% }%>
+    </div>
+    
+   
+</body>
+</html>
