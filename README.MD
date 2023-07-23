@@ -28,7 +28,7 @@ This project was developed with the following technologies:
 
 In this server there are the main necessary functionalities, such as adding, deleting, viewing and modifying users using mainly the 'express' library. Each with it's specific directory
 
-The server only stores information if they are in accordance with the pre-established scope and does all data processing in JSON.
+The server only stores information if they are in accordance with the pre-established scope and does all data processing in JSON and send to mongoDB database.
 
 <img alt="Site Post-it" src="./GitHub/atualizar-usuario.png" width="70%">
 
